@@ -19,13 +19,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Quicksand';
-    src: url("fonts/Quicksand.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -70,13 +63,15 @@ html, body {
     margin: 20px;
     box-sizing: border-box; 
     transition: all 0.3s ease;
-    font-family: "Quicksand", monospace;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
 }
 
 a {
     color: #cf4fe8;
     text-decoration: none;
     transition: color 1s ease;
+    cursor: pointer;
 }
 
 a:hover {
@@ -112,13 +107,27 @@ a:hover {
 }
 
 .btns {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: 380px;
     line-height: 10px;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid #121214;
+    border: none;
     cursor: pointer;
+    font-family: "Lora", monospace;
+    font-size: 15px;
+    padding: 12px 24px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slogan {
+    text-align: center;
+    font-family: "Playfair Display", serif, monospace;
+    text-transform: lowercase;
+    letter-spacing: 3px;
 }
 
 .btns:hover {
